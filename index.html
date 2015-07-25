@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="http://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<div style="-webkit-app-region: drag" class="drag"></div>
+
+
+
+<button onclick="win.minimize();" id="min" class="wincontrol min">_</button>
+<button onclick="win.close();" id="close" class="wincontrol close">x</button>
+
+<h3 class="title">CSGOSNACK - FREE</h3>
+<button onclick="startLoad();" class="inject" id="inject"><h2>Inject</h2></button>
+
+<div class="loadingWrapper">
+	<div id="loadingStatus"></div>
+</div>
+
+<div id="loading" style="width: 0%;"></div>
+
+<script src="snack.js"></script>
+</body>
+</html>

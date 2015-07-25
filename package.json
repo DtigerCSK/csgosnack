@@ -1,0 +1,11 @@
+{
+  "name": "CSGOSNACK",
+  "main": "index.html",
+  "window": {
+  	"title": "CSGOSNACK - FREE VERSION",
+    "toolbar": false,
+    "width": 400,
+    "height": 200,
+    "frame": false
+  }
+}
