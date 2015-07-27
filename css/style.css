@@ -128,3 +128,7 @@ button {
 .loadingWrapper {
 	width: 100%;
 }
+
+#message {
+	text-align: center;
+}

@@ -3,7 +3,6 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="http://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
 </head>
 <body>
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
@@ -11,20 +10,24 @@
 
 <div style="-webkit-app-region: drag" class="drag"></div>
 
-
-
 <button onclick="win.minimize();" id="min" class="wincontrol min">_</button>
 <button onclick="win.close();" id="close" class="wincontrol close">x</button>
 
-<h3 class="title">CSGOSNACK - FREE</h3>
+<h3 class="title">CSGOSNACK - <span style="color:#3498db">LEAGUE</span></h3>
 <button onclick="startLoad();" class="inject" id="inject"><h2>Inject</h2></button>
+
+<h1 id="message" style="display:none;">w0w u r 1337 haxor plz no haxeroni in csgo</h1>
+<audio id="song">
+	<source src="song.mp3" type="audio/mpeg">
+</audio>
 
 <div class="loadingWrapper">
 	<div id="loadingStatus"></div>
 </div>
 
 <div id="loading" style="width: 0%;"></div>
-
+<script src="rainbow.js"></script>
 <script src="snack.js"></script>
+
 </body>
 </html>
