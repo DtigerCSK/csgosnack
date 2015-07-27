@@ -2,7 +2,11 @@ $(document).ready(function() {
 	console.log("ready!")
 });
 
+var clicked = false
+
 function startLoad() {
+	if (clicked) return;
+	clicked = true;
 	$("#inject").fadeOut();
 	console.log("clicked");
 	$("#loadingStatus").html("Initializing Injector...");
@@ -12,7 +16,7 @@ function startLoad() {
 		loadingWidth += temp;
 		$("#loading").animate({
 			width: loadingWidth
-		}, temp*30, function() {
+		}, temp*40, function() {
 			if ($("#loading").width() >= 100) {
 				$("#loadingStatus").html("Injecting Code...");
 			}
@@ -25,6 +29,22 @@ function startLoad() {
 			if ($("#loading").width() >= 400) {
 				$("#loading").css("background-color", "#2ecc71");
 				$("#loadingStatus").html("Injection Complete").css("font-size", "30px");
+				$("#message").fadeIn(3000).rainbow({
+					colors: [
+						'#e74c3c',
+						'#e67e22',
+						'#f1c40f',
+						'#1abc9c',
+						'#2ecc71',
+						'#3498db',
+						'#9b59b6'
+					],
+					animate: true,
+					animateInterval: 75,
+					pad: false,
+					pauseLength: 75,
+				});
+				$("#song").trigger('play');
 			}
 		});
 		console.log("looped");
